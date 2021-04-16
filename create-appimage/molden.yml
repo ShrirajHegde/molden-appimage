@@ -1,0 +1,22 @@
+app: Molden
+
+ingredients:
+  script:
+    - pwd
+
+script:
+  - pwd
+  - cp -r ../../molden-bin/* .
+  - cp ../../molden-bin/molden-launch ./usr/bin/molden-launch 
+  - pwd
+  - cp ../../molden-bin/molden.png .
+  - cat > molden.desktop <<\EOF
+  - [Desktop Entry]
+  - Type=Application
+  - Encoding=UTF-8
+  - Exec=bash molden-launch %f
+  - Icon=molden.png
+  - Name=Molden
+  - Terminal=false
+  - Categories=Development
+  - EOF

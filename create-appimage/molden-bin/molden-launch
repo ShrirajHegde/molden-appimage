@@ -1,0 +1,6 @@
+if [ ""$(echo $@ | cut -c 1-1 )"" = "/" ]; then #if provided path is absolute
+	exec $APPDIR/gmolden $@
+else #if relative
+	exec $APPDIR/gmolden $OWD/$@
+
+fi

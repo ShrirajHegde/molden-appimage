@@ -2,6 +2,13 @@
 
 Molden 6.7 Appimage and build instructions
 
+(from https://aur.archlinux.org/molden.git)
+
+## Use without compiling
+
+* Download appimage / binary from [releases](https://github.com/ShrirajHegde/molden-appimage/releases)
+* extract zip
+
 ## Building molden
 
 ### Install build dependencies:
